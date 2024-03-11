@@ -1,0 +1,303 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="blog">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="blue">
+    <title>Welcome to our blog services</title>
+    
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        svg{
+            display: block;
+            margin: 0 auto;
+            animation: beauty 1s linear infinite;
+            position: static;
+        }
+        @keyframes beauty{
+            0%{
+               transform: translate(110%, 110%);
+
+            }
+            100%{
+             transform: translate(-110%, -110%);
+            }
+        }
+        #svg1, #svg2, #svg3{
+            display: block;
+            margin: 0 auto;
+            animation: beauty-right 1s linear infinite;
+        }
+        @keyframes beauty-right{
+            0%{
+               transform: translate(-110%, -110%);
+               fill: blue;
+
+            }
+            100%{
+             transform: translate(110%, 110%);
+             fill: red;
+            }
+        }
+
+header{
+    background-color: blue;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+ul li{
+    list-style: none;
+    margin: auto;
+    margin-left: 40%;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+    color: aliceblue;
+}
+ul{
+    margin-left: 30%;
+    display:flex;
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+main{
+    position: relative;
+    margin: 100px;
+}
+.container div{
+    float: right;
+    margin-top: 20%;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+
+}
+.stars{
+    height: 100vh;
+    width: 100%;
+
+}
+button{
+    padding: 20px;
+    border: none;
+    background: blue;
+    color: white;
+    border-radius: 5px;
+}
+main section h1{
+    color: blue;
+    margin-top: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: xx-large;
+}
+footer {
+            background-color: #c1c1c1;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            min-width: 500px;
+        }
+
+        footer div {
+            display: grid;
+            margin: 20px;
+        }
+
+        footer div a {
+            margin-top: 3vh;
+        }
+        ol{
+            z-index: 10;
+            position: absolute;
+            top: 10%;
+            right: 25%;
+            width: fit-content;
+            padding: 50px;
+            background: rgba(255, 255, 255, 1);
+            border-radius: 5px;
+            display: none;
+        }
+        ol li{
+            color: black;
+            list-style: none;
+            font-size: x-large;
+            font-family: 'Courier New', Courier, monospace;
+            line-height: 2;
+        }
+
+        #headlines:hover~ ol{
+            display: block;
+
+        }
+    </style>
+</head>
+<body contenteditable="true">
+    <header>
+        <h1>Theme--blog</h1>
+        <ul>
+            <li id="headlines">Headlines</li>
+            <li>Newsletter</li>
+        </ul>
+
+        </header>
+        <ol>
+            <li>First News</li>
+            <li>Second News</li>
+            <li>Third News</li>
+            <li>Fourth News</li>
+            <li>Fifth News</li>
+        </ol>
+        <div class="stars">
+            <svg height="100" id="svg1" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>        <svg height="200" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>        <svg height="10" id="svg2" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>        <svg height="100" id="svg3" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>        <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>        <svg height="200" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>
+            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>
+            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>   
+            <svg height="100" id="svg3" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>         
+            
+            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>    
+            <svg height="100" id="svg3" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg> 
+            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>            <svg height="50" xmlns="http://www.w3.org/2000/svg">
+                <polygon points=" 10,10 20,20 10,20 10,20 20,10" fill="blue"></polygon>
+            </svg>   
+        </div>
+        <div class="container">
+        <main>
+
+        <section>
+            <h1>first News relaxatoiomvnnhd of the
+                 crew, we anticipate an opaque edifix and 
+                 flexible bay at the ocean corners filled
+                  with peace and life without circumstances but 
+                  only visualizations all through, thank you for 
+                being an art of harmony unto our tidious lives.</h1>
+                <button>continue Reading</button>
+        </section>   
+        <section>
+            <h1>Second News</h1>
+            <p>welcome to mc djj we relfux ndhydb 
+                to hesitae onthe relaxatoiomvnnhd of the
+                 crew, we anticipate an opaque edifix and 
+                 flexible bay at the ocean corners filled
+                  with peace and life without circumstances but 
+                  only visualizations all through, thank you for 
+                being an art of harmony unto our tidious lives.</p>
+                <button>continue Reading</button>
+        </section>       
+          <section>
+            <h1>Third News</h1>
+            <p>welcome to mc djj we relfux ndhydb 
+                to hesitae onthe relaxatoiomvnnhd of the
+                 crew, we anticipate an opaque edifix and 
+                 flexible bay at the ocean corners filled
+                  with peace and life without circumstances but 
+                  only visualizations all through, thank you for 
+                being an art of harmony unto our tidious lives.</p>
+                <button>continue Reading</button>
+
+
+
+        </section>     
+            <section>
+            <h1>Fourth News</h1>
+            <p>welcome to mc djj we relfux ndhydb 
+                to hesitae onthe relaxatoiomvnnhd of the
+                 crew, we anticipate an opaque edifix and 
+                 flexible bay at the ocean corners filled
+                  with peace and life without circumstances but 
+                  only visualizations all through, thank you for 
+                being an art of harmony unto our tidious lives.</p>
+                <button>continue Reading</button>
+        </section>        
+         <section>
+            <h1>fifth News</h1>
+            <p>welcome to mc djj we relfux ndhydb 
+                to hesitae onthe relaxatoiomvnnhd of the
+                 crew, we anticipate an opaque edifix and 
+                 flexible bay at the ocean corners filled
+                  with peace and life without circumstances but 
+                  only visualizations all through, thank you for 
+                being an art of harmony unto our tidious lives.</p>
+                <button>continue Reading</button>
+        </section>      
+        </main>
+        <div>
+            <section>
+                <h1>first News header here header here</h1>
+                <h1>second News header here header here</h1>
+                <h1>third News header here header here</h1>
+                <h1>fourth News header here header here</h1>
+                <h1>fifth News header here header here</h1>
+                <h1>sixth News header here header here</h1>
+                <h1>seventh News header here header here</h1>
+
+
+                    <button>Read more</button>
+            </section> 
+        </div>
+       <!--<footer>
+            <div>
+                <h4>Extra</h4>
+                <a href="#">Article</a>
+                <a href="#">Write for us</a>
+                <a href="#">Report a scene</a>
+            </div>
+    
+            <div>
+                <h4>company</h4>
+                <a href="#">About Us</a>
+                <a href="#">Feedback</a>
+                <a href="#">blogs</a>
+            </div>
+            <div>
+                <h4>Legal</h4>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Legal Notice</a>
+                <a href="#">Terms and Conditions</a>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Reddit</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </footer>-->
+        </div>
+
+
+</body></html>

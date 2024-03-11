@@ -1,0 +1,144 @@
+#background {
+    position: relative;
+    background-image: url("../images/impression.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+  }
+  
+  #register_intro {
+    position: absolute; 
+    top:  0; 
+    left:  0;
+    right:  0; 
+    bottom:  0;
+    z-index:  1; 
+    background: rgba(255,  255,  255,  0.4);
+  }
+  main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5%;
+  }
+  #password-strength {
+    display: none;
+  }
+  .strength-bar {
+    width:  90%;
+    background-color: #ccc;
+    border:  1px solid #000;
+  }
+  .strength-bar.weak {
+    background-color: #f00;
+  }
+  .strength-bar.medium {
+    background-color: #ff0;
+  }
+  .strength-bar.strong {
+    background-color: green;
+  }
+  form{
+    width: 70%;
+    margin: auto;
+  }
+  form div{
+    display: grid;
+    margin-top: 30px;
+    border: 1px solid rgba(194, 191, 191, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+  }
+  form div button{
+    width: fit-content;
+    font-size: medium;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    border: none;
+    background-color: #04AA6D;
+    color: #ffff;
+    font-family: monospace;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+  }
+  form div input{
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  form div input:focus{
+    background: inherit;
+  }
+  .label{
+    display: none;
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    left: 10px;
+  }
+  form div input:focus::placeholder{
+    opacity: 0;
+  }
+  form div input:focus ~ .label{
+    display: block;
+    top: -12px;
+  }
+    input[type="submit"]{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #04AA6D;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+
+
+  }
+  #register_intro h1{
+    font-size: 60px;
+    background: rgba(255,  255,  255,  0.4);
+    padding: 20px;
+
+  }
+  #register_intro p{
+    font-size: larger;
+    text-align: center;
+    margin-left: 10px;
+    font-weight: 900;
+    background: rgba(255,  255,  255,  0.4);
+    padding: 20px;
+  }
+  #register_intro small{
+    position: absolute;
+    bottom: 0;
+    right: 40%;
+  }
+  header{
+    position: relative;
+    box-shadow: 0px 5px 8px -8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+
+  }
+  header button{
+    padding: 5px;
+    background-color: transparent;
+    position: absolute;
+    top:0px;
+  }
+  #login{
+    right: 15%;
+    font-size: large;
+    border: none;
+    margin-top: 5px;
+    color: #04AA6D;
+  }
+  #help{
+    right: 7%;
+    padding: 10px;
+    font-size: large;
+    border-radius: 3px;
+    border: 2px double #04AA6D;
+  }

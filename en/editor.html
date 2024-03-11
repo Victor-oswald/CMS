@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Template Editor</title>
+    <link rel="stylesheet" href="../css/editor.css">
+</head>
+<body>
+    <header>
+        <img src="" alt="logo"><button id="save">Save</button>
+    </header>
+    <button id="addBTN" draggable="true">+</button> 
+    <div id="themes">
+        <iframe id="template" frameBorder="0" scrolling="no"></iframe>
+    </div>
+    <script src="../js/handle_templates.js"></script>
+    <div class="addional-content" id="tools">
+        <div class="text">
+            <p>Add Text Box</p>
+        </div>
+
+        <div class="image">
+            <p>Add Image</p>
+        </div>
+
+        <div class="element">
+            <p>Add Element</p>
+        </div>
+
+        <div class="url">
+            <p>Add url</p>
+        </div>
+
+        <div class="icon">
+            <p>Add an icon</p>
+        </div>
+    </div>
+
+
+    <div id="text-box-content">
+        <div class="container">
+            <form id="contentForm">
+                <select id="contentType">
+                    <option value="header">Header</option>
+                    <option value="paragraph">Paragraph</option>
+                    <option value="footer">Footer</option>
+                </select>
+                <input type="text" id="contentInput" placeholder="Enter content here...">
+                <button type="submit">Add Content</button>
+            </form>
+            <div id="contentContainer"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="../js/editor.js"></script>
+</body>
+</html>

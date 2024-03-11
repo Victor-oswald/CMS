@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styles */
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #333;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a{
+display: block;
+color: #ffffff;
+padding: 16px;
+text-decoration: none;
+}
+.active{
+    background-color: #04AA6D;
+    color: white;
+}
+.sidebar a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+
+
+/* Main Content Styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    margin-left: 200px;
+    padding: 1px 16px;
+}
+header{
+display: flex;
+position: sticky;
+box-shadow: 0px 5px 8px -8px rgba(0, 0, 0, 0.5);
+padding: 10px;
+align-content:center;
+
+}
+.search-container{
+    border: 2px solid rgba(105, 101, 101, 0.253);
+    padding: 5px 0px 5px 5px;
+    width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    position: relative;
+}
+.search-container input{
+    border: none;
+    width: 80%;
+}
+.search-container button{
+    border: none;
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: #04AA6D;
+    color: white;
+}
+.traffic-chart, .websites, .drafts, .pages{
+    box-shadow: 5px 7px 8px -8px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    margin: 20px;
+}
+.page-contents{
+    display: grid;
+    grid-template-columns: 0.5fr 1.5fr;
+}

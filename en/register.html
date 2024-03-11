@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a free account| Turn your vision into content</title>
+    <link rel="stylesheet" href="../css/register.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="" alt="logo">
+        <button id="login">Login</button>
+        <button id="help">help</button>
+    </header>
+    <main>
+        <section>
+            <div id="background">
+                <div id="register_intro">
+                    <h1>Welcome to the extraordinary!</h1>
+                    <p>You are a step away from joining millions of our happy users, create a free account today and see
+                        the magic 🪄</p>
+                    <small>Need help? visit our <a href="#">FAQ</a></small>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <form id="form">
+                <div id="firstName_wrap" class="wrap">
+                    <input type="text" name="firstName" id="firstName" placeholder="Your First Name">
+                    <span class="label">First Name</span>
+                </div>
+                <p class="warning firstName"></p>
+                <div id="lastName_wrap" class="wrap">
+                    <input type="text" name="lastName" id="lastName" placeholder="Your Last Name" >
+                    <span class="label">Last name</span>
+                </div>
+                <p class="warning lastName"></p>
+                <div id="email_wrap" class="wrap">
+                    <input type="text" name="email" id="email" placeholder="Your Email Address">
+                    <span class="label">Email Address</span>
+                </div>
+                <p class="warning email"></p>
+
+                <div id="business_wrap" class="wrap">
+                    <input type="text" name="business" id="business" placeholder="Your Business Name">
+                    <span class="label">Business Name</span>
+                </div>
+                <p class="warning business"></p>
+
+                <div id="password_wrap" class="wrap">
+                    <input type="password" name="myPassword" id="myPassword" placeholder="Enter your password">
+                    <button type="button" id="togglePassword">Show</button>
+                    <span class="label" for="myPassword">Password</span>
+                </div>
+                <p class="warning" id="password_warn"></p>
+
+                <div id="password-strength" class="strength-bar"></div>
+
+                <div id="confirm_wrap" class="wrap">
+                    <input type="password" name="confirm" id="confirm" placeholder="confirm Your Password">
+                    <span class="label">Confirm Your Password</span>
+                </div>
+                <p class="warning confirm"></p>
+
+                <input type="submit" value="Register">
+            </form>
+
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div class="g-signin2" data-onsuccess="onSignIn" data-client_id="YOUR_CLIENT_ID.apps.googleusercontent.com"></div>
+
+                <!-- Display login status -->
+                <div id="status"></div>
+
+                <!-- Facebook login or logout button -->
+                <a href="javascript:void(0);" onclick="fbLogin();" id="fbLink"><img src="images/fb-login-btn.png" /></a>
+
+                <!-- Display user's profile info -->
+                <div class="ac-data" id="userData"></div>
+
+        </section>
+    </main>
+    <script src="../js/register.js"></script>
+    <script src="../resources/facebook.js"></script>
+    <script src="../resources/google.js"></script>
+</body>
+
+</html>
